@@ -1,10 +1,11 @@
 <div class="yorumcuksu">
 		<input type="checkbox" id="toggle" />
 		<label class="toggle" for="toggle">
-			Yorumlara bi bakalım <i class="indicator"></i>
+			Yorumlara bi bakalÃ½m <i class="indicator"></i>
 		</label>
+		<div class="bu-tala-icin">
 
-<!-- Content Here -->
+		<!-- Content Here -->
 
-		
+		</div>	
 </div>

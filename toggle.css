@@ -1,0 +1,99 @@
+/************ ***********************/
+.yorumcuksu {
+  padding-top: 0;
+  width: 100%;
+}
+.yorumcuksu .toggle {
+  position: relative;
+  display: block;
+  margin: 10px 0 50px;
+  padding: 10px;
+  background-color: #719998;
+  border-radius: 4px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.yorumcuksu .toggle .indicator {
+  position: relative;
+  top: 4px;
+  width: 15px;
+  height: 16px;
+  line-height: 1.75;
+  transition: transform 250ms ease;
+  float: right;
+}
+.yorumcuksu .toggle .indicator:before, .yorumcuksu .toggle .indicator:after {
+  position: absolute;
+  content: '';
+}
+.yorumcuksu .toggle .indicator:before {
+  top: 50%;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  transform: translateY(-1px);
+}
+.yorumcuksu .toggle .indicator:after {
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background-color: white;
+  transform: translateX(-1px);
+}
+.yorumcuksu #toggle {
+  display: none;
+}
+.yorumcuksu #toggle:checked + .toggle .indicator {
+  transform: rotate(45deg);
+}
+.yorumcuksu #toggle:checked ~ .bu-tala-icin {
+  height: auto;
+}
+.yorumcuksu .bu-tala-icin {
+  position: relative;
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.yorumcuksu .bu-tala-icin .comment {
+  position: relative;
+  display: flex;
+}
+.yorumcuksu .bu-tala-icin .comment .user {
+  position: relative;
+  width: 80px;
+  height: inherit;
+  margin: 0 20px 20px 0;
+  padding: 0;
+  float: left;
+  font-size: 12px;
+  text-align: center;
+}
+.yorumcuksu .bu-tala-icin .comment .user .pic {
+  position: relative;
+  width: 100%;
+  height: 65px;
+  margin: 6px auto;
+  background-image: url("http://images.complex.com/complex/image/upload/c_limit,w_680/fl_lossy,pg_1,q_auto/Screen_Shot_2015-09-08_at_12.11.35_PM_sy22b5.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-color: darkgray;
+  overflow: hidden;
+}
+.yorumcuksu .bu-tala-icin .comment .user .date {
+  font-size: 12px;
+}
+.yorumcuksu .bu-tala-icin .comment .text .author {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #e74c3c;
+}
+.yorumcuksu .bu-tala-icin .comment .text p {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
